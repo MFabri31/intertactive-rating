@@ -1,0 +1,96 @@
+:root {
+  /* Primary */
+  --orange: #fb7413;
+
+  /* Neutral */
+  --white: #ffffff;
+  --lightGrey: #858f9b;
+  --mediumGrey: #262f38;
+  --darkBlue: #1d242e;
+
+  --veryDarkBlue: #141519;
+
+  --mainFont: "Overpass", sans-serif;
+  --fontSize: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--mainFont);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--veryDarkBlue);
+  font-size: var(--fontSize);
+}
+
+a:hover {
+  color: var(--white) !important;
+}
+
+input[type="button"] {
+  background-color: var(--mediumGrey);
+  color: var(--lightGrey);
+  transition: background-color 0.2s ease;
+}
+
+input[type="button"]:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+input[type="button"]:focus {
+  background-color: var(--lightGrey);
+  color: var(--white);
+  box-shadow: none;
+}
+
+button[type="submit"] {
+  background-color: var(--orange);
+  color: var(--white);
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.my-card {
+  background-color: var(--darkBlue);
+  border-radius: 22px;
+  width: 25rem;
+}
+
+.my-card-badge {
+  background-color: var(--veryDarkBlue) !important;
+  color: var(--orange);
+  opacity: 75%;
+}
+
+.icon-circle {
+  background-color: var(--mediumGrey);
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  bottom: 0.3rem;
+  border-radius: 50%;
+  z-index: 50;
+}
+
+.icon-star {
+  position: absolute;
+  top: 3rem;
+  left: 2.2rem;
+  z-index: 999;
+  width: 1rem;
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-gray {
+  color: var(--lightGrey);
+}
